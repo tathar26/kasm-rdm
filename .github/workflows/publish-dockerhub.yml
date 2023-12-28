@@ -13,3 +13,5 @@ jobs:
                 docker login --username tathar26 --password dckr_pat_6Hi0vt2FmMnm5LpOYYbK7DOjCVg
                 docker build . --file Dockerfile --tag tathar26/kasm-rdm:latest
                 docker push tathar26/kasm-rdm:latest
+                docker build . --file DockerFile --tag tathar26/kasm-rdm:1.14.0
+                docker push tathar26/kasm-rdm:1.14.0
