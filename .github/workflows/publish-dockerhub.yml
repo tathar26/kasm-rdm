@@ -4,14 +4,21 @@ on:
     push
 
 jobs:
-    build_and_publish:
+    build_and_publish_latest:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
-            - name: build and push the image
+            - name: build and push the image latest
               run: |
                 docker login --username tathar26 --password dckr_pat_6Hi0vt2FmMnm5LpOYYbK7DOjCVg
                 docker build . --file Dockerfile --tag tathar26/kasm-rdm:latest
                 docker push tathar26/kasm-rdm:latest
+
+    build_and_publish_kasm_version:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - name: build and push the image with tag verison
+              run: |           
                 docker build . --file DockerFile --tag tathar26/kasm-rdm:1.14.0
                 docker push tathar26/kasm-rdm:1.14.0
