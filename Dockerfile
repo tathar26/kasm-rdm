@@ -21,7 +21,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
                   /ubuntu/install/firefox/install_firefox.sh \
                   /ubuntu/install/vs_code/install_vs_code.sh \
                   /ubuntu/install/gamepad_utils/install_gamepad_utils.sh \
-                  /ubuntu/install/rdm/rdm.sh \
+                  /ubuntu/install/rdm/install_rdm.sh \
                   /ubuntu/install/cleanup/cleanup.sh"
 
 # Copy install scripts
