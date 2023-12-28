@@ -20,5 +20,5 @@ jobs:
             - uses: actions/checkout@v3
             - name: build and push the image with tag verison
               run: |           
-                docker build . --file DockerFile --tag tathar26/kasm-rdm:1.14.0
+                docker build . --file Dockerfile --tag tathar26/kasm-rdm:1.14.0
                 docker push tathar26/kasm-rdm:1.14.0
