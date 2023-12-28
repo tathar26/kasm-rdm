@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -ex
-wget -q https://cdn.devolutions.net/download/Linux/RDM/2023.3.1.4/RemoteDesktopManager_2023.3.1.4_amd64.deb -O rdm.deb
+#wget -q https://cdn.devolutions.net/download/Linux/RDM/2023.3.1.4/RemoteDesktopManager_2023.2.0.6_amd64.deb -O rdm.deb
+wget -q https://cdn.devolutions.net/download/Linux/RDM/2023.2.0.6/RemoteDesktopManager_2023.2.0.6_amd64.deb -O rdm.deb
 apt-get update
 apt-get install -y ./rdm.deb
 cp /usr/share/applications/remotedesktopmanager.desktop $HOME/Desktop/
